@@ -4,21 +4,29 @@
 * Owner: Brian W. Karimi
 * Course: SDPT16
 * Date: 30th September, 2026
-* Time of last edit: 17:13 hrs
+* Time of last edit: 23:20 hrs
 */
 
+//Calculates the tax value of
+// an amount based on a 10% rate
 function calculateTax(amount){
     return((10/100) * amount)
 }
 
+//Converts a string to uppercase
 function convertToUpperCase(text){
     return(text.toUpperCase());
 }
 
+//Finds the max variable of two
+// parameters
 function findMaximum(num1, num2){
     return(Math.max(num1, num2));
 }
 
+//Returns true or false based
+// on whether a given strin
+// is a palindrome or not
 function isPalindrome(word){
     let reverseWord = "";
     for (let i = (word.length - 1); i >= 0; i--){
@@ -32,6 +40,8 @@ function isPalindrome(word){
     }
 }
 
+//Calculates the final price given an original price and a discount
+// percentage
 function calculateDiscountedPrice(originalPrice, discountPercentage){
     if (discountPercentage >= 1){
         //debugger;
@@ -46,7 +56,5 @@ function calculateDiscountedPrice(originalPrice, discountPercentage){
     }
 }
 
-console.log(calculateDiscountedPrice(1200, 9));
-
-// This is required for the test to function properly  
+// Makes the functions declared above available for import outside of index.js 
 module.exports = { calculateTax, convertToUpperCase, findMaximum, isPalindrome, calculateDiscountedPrice };
