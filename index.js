@@ -7,26 +7,36 @@
 * Time of last edit: 23:20 hrs
 */
 
-//Calculates the tax value of
-// an amount based on a 10% rate
+// Utility: Calculates the tax value of
+//          an amount based on a 10% rate
+// Params: amount (number)
+// Returns: tax value (number)
 function calculateTax(amount){
     return((10/100) * amount)
 }
 
-//Converts a string to uppercase
+// Utility: Converts a string to uppercase
+// Params: text (string or character)
+// Returns: uppercase version of text 
+//          (string  or character)
 function convertToUpperCase(text){
     return(text.toUpperCase());
 }
 
-//Finds the max variable of two
-// parameters
+// Utility: Finds the max variable of two
+//          parameters
+// Params: num1, num2 (number, number)
+// Returns: max value of the two
+//  params (number)
 function findMaximum(num1, num2){
     return(Math.max(num1, num2));
 }
 
-//Returns true or false based
-// on whether a given strin
-// is a palindrome or not
+// Utility: Returns true or false based
+//          on whether a given strin
+//          is a palindrome or not
+// Params: word (string or character)
+// Returns: true or false
 function isPalindrome(word){
     let reverseWord = "";
     for (let i = (word.length - 1); i >= 0; i--){
@@ -40,8 +50,10 @@ function isPalindrome(word){
     }
 }
 
-//Calculates the final price given an original price and a discount
-// percentage
+// Utility: Calculates the final price given an original price and a discount
+//          percentage
+// Params: originalPrice, discountedPercentage (number, number)
+// Returns: discounted price (number)
 function calculateDiscountedPrice(originalPrice, discountPercentage){
     if (discountPercentage >= 1){
         //debugger;
