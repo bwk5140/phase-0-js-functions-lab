@@ -1,3 +1,12 @@
+/*
+* Lab: Functions in Javascript
+* Purpose: Testing function definition, implementation, and testing
+* Owner: Brian W. Karimi
+* Course: SDPT16
+* Date: 30th September, 2026
+* Time of last edit: 17:13 hrs
+*/
+
 function calculateTax(amount){
     return((10/100) * amount)
 }
@@ -25,6 +34,7 @@ function isPalindrome(word){
 
 function calculateDiscountedPrice(originalPrice, discountPercentage){
     if (discountPercentage >= 1){
+        //debugger;
         discountPercentage = discountPercentage / 100;
         return(originalPrice - (originalPrice * discountPercentage));
     }
@@ -36,6 +46,7 @@ function calculateDiscountedPrice(originalPrice, discountPercentage){
     }
 }
 
+console.log(calculateDiscountedPrice(1200, 9));
 
 // This is required for the test to function properly  
 module.exports = { calculateTax, convertToUpperCase, findMaximum, isPalindrome, calculateDiscountedPrice };
