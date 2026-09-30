@@ -1,13 +1,13 @@
 function calculateTax(amount){
-    console.log((10/100) * 100)
+    return((10/100) * amount)
 }
 
 function convertToUpperCase(text){
-    console.log(text.toUpperCase());
+    return(text.toUpperCase());
 }
 
 function findMaximum(num1, num2){
-    console.log(Math.max(num1, num2));
+    return(Math.max(num1, num2));
 }
 
 function isPalindrome(word){
@@ -16,16 +16,28 @@ function isPalindrome(word){
         reverseWord += word[i];
     }
     if (reverseWord === word){
-        console.log(true);
+        return(true);
     }
     else{
-        console.log(false);
+        return(false);
     }
 }
 
 function calculateDiscountedPrice(originalPrice, discountPercentage){
     if (discountPercentage >= 1){
         discountPercentage = discountPercentage / 100;
+        return(originalPrice - (originalPrice * discountPercentage));
     }
-    console.log(originalPrice - (originalPrice * discountPercentage));
+    else if (discountPercentage === 0){
+        return(originalPrice);
+    }
+    else{
+        return(originalPrice - (originalPrice * discountPercentage));
+    }
 }
+
+export {calculateTax};
+export {convertToUpperCase};
+export {findMaximum};
+export {isPalindrome};
+export {calculateDiscountedPrice};
