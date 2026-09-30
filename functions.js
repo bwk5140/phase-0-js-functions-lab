@@ -29,16 +29,3 @@ function calculateDiscountedPrice(originalPrice, discountPercentage){
     }
     console.log(originalPrice - (originalPrice * discountPercentage));
 }
-
-calculateTax(1560);
-
-convertToUpperCase("hi, have a great afternoon");
-
-findMaximum(10, 18);
-
-isPalindrome("word", "drow");
-
-isPalindrome("civic", "civic");
-
-calculateDiscountedPrice(1200, 12);
-calculateDiscountedPrice(1200, 0.06);
